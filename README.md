@@ -13,3 +13,28 @@
 
 - **Vídeos Recomendado:** [ASP.NET](https://www.youtube.com/watch?v=J_YTQEmMaGU&list=PLHlHvK2lnJncl6eGo9Qt66qIumaq6oP58&pp=iAQB)
 - **Site Oficial:** [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
+
+
+- ## Experimento: Converter Texto em Áudio
+
+- 1. **Configuração do Ambiente:**
+   - Certifique-se de ter uma chave de assinatura válida para os Serviços Cognitivos da Microsoft.
+   - Para obter uma chave de assinatura:
+     1. Crie uma conta da Microsoft, se você ainda não tiver uma.
+     2. Acesse o portal do Azure em [https://portal.azure.com/](https://portal.azure.com/).
+     3. Crie um recurso de Serviços Cognitivos.
+     4. Obtenha a chave de assinatura do recurso criado.
+     5. Anote a chave de assinatura e a região do recurso.
+
+2. **Baixar o Código Fonte:**
+   - Baixe o código fonte do arquivo `TextToSpeechController.cs`.
+
+3. **Configurando a Chave de Assinatura:**
+   - Abra o arquivo `TextToSpeechController.cs`.
+   - Substitua `"YOUR_SUBSCRIPTION_KEY"` pela sua chave de assinatura obtida no portal do Azure.
+   - Substitua `"YOUR_REGION"` pela região onde sua assinatura está registrada.
+
+4. **Executando o Código:**
+   - Execute o projeto ASP.NET na IDE.
+   - Após o lançamento do aplicativo, pode enviar solicitações HTTP POST para o endpoint do controlador de API `TextToSpeech` para converter texto em áudio.
+   - O áudio resultante será retornado como uma resposta HTTP no formato WAV.
